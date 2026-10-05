@@ -3,3 +3,11 @@
 /forms/
 /SymmetricTags/
 /cres/
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+
+# Ignore the build directory
+/build/
