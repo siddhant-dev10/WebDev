@@ -1,14 +1,13 @@
 /* styles.css */
 body {
   font-family: Arial, sans-serif;
-  background-color: gray;
+  background-color: lightyellow;
 }
 
 h1 {
   color: rgb(133, 44, 44);
 }
 
-p {
-  font-size: 14px;
-  line-height: 1.5;
-}
+p      { color: green; }
+.note  { color: orange; }
+#location { color: rgb(125, 37, 37); }
