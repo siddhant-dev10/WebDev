@@ -1,0 +1,11 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightyellow;
+}
+h1 {
+  color: rgb(133, 44, 44);
+}
+p{
+    color: green;
+}
