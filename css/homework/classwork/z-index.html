@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Z-Index Example</title>
-  <style>
-img {
-  position: absolute;
-  left: 10px;
-  top: 160px;
-  z-index: -1;
-}
-</style>
-</head>
-<body>
+    <head>
+        <style>
+            img {
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                z-index: -1;
+            }
+        </style>
+    </head>
 
-<h1>This is a Heading for learing z-index</h1>
-<img src="backgrounds.png">
-<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    <body>
+        <h1>This is a heading</h1>
 
-</body>
+        <img
+            src="backgrounds.png"
+            alt="Tree"
+            width="400"
+            height="400"
+        >
+
+        <p>
+            Because the image has a z-index of -1, it will be placed behind
+            the text.
+        </p>
+    </body>
 </html>
