@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo with 9 Text Positions</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: #111;
+        }
+
+        .photo-grid {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .background-photo {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            z-index: 1;
+        }
+
+        .photo-grid::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgb(0 0 0 / 18%);
+            z-index: 2;
+        }
+
+        .text {
+            position: absolute;
+            z-index: 3;
+            max-width: 28%;
+            color: white;
+            font-size: clamp(14px, 2vw, 30px);
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 0 2px 5px black;
+        }
+
+        .top-left { top: 3%; left: 3%; }
+        .top-middle { top: 3%; left: 50%; transform: translateX(-50%); }
+        .top-right { top: 3%; right: 3%; }
+
+        .middle-left { top: 50%; left: 3%; transform: translateY(-50%); }
+        .center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+        .middle-right { top: 50%; right: 3%; transform: translateY(-50%); }
+
+        .bottom-left { bottom: 3%; left: 3%; }
+        .bottom-middle { bottom: 3%; left: 50%; transform: translateX(-50%); }
+        .bottom-right { right: 3%; bottom: 3%; }
+    </style>
+</head>
+
+<body>
+    <main class="photo-grid">
+        <img class="background-photo" src="background.jpg" alt="Friends">
+
+        <div class="text top-left">Top Left</div>
+        <div class="text top-middle">Top Middle</div>
+        <div class="text top-right">Top Right</div>
+
+        <div class="text middle-left">Middle Left</div>
+        <div class="text center">Center</div>
+        <div class="text middle-right">Middle Right</div>
+
+        <div class="text bottom-left">Bottom Left</div>
+        <div class="text bottom-middle">Bottom Middle</div>
+        <div class="text bottom-right">Bottom Right</div>
+    </main>
+</body>
+</html>

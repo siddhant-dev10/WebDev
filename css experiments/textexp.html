@@ -3,17 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Text Experiments</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .middle-box {
+            width: 250px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed red;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .strike {
+            text-decoration: line-through;
+            text-align: center;
+        }
+
+        .green-wave {
+            text-decoration: underline wavy green;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 class="style-heading" style="text-decoration: underline; text-align: justify;">Hello, World!</h1>
-    <div class="container" style="height: 150px; border: 2px dashed #ff0000; display: table-cell; vertical-align: middle;width: 5%;text-align: center;">
-        <h1 class="style-heading" style="text-decoration: underline; text-align: top;">Hello, Universe!</h1>
+    <h1 class="underline">Hello, World!</h1>
+
+    <div class="middle-box">
+        <h2>Hello, Universe!</h2>
     </div>
-    <h2 class="style-heading" style="text-decoration: line-through; text-align: center;">Hello, Siddhant!</h2>
-    <h3 class="style-heading" style="text-decoration: underline; text-align: center; font-size: 24px;">Welcomeeee!</h3>
-    <p class="style-paragraph" style="line-height: 150%;">This is a simple HTML page.</p>
-    <article class="style-article" style="text-align: justify; text-decoration: underline; text-decoration-color: green; text-decoration-style: wavy; text-transform: uppercase;">This is an article section.</article>
-        <p>HELLO!!, My name is Siddhant.I study at Mirai School of Technology.</p>
+
+    <h2 class="strike">Hello, Siddhant!</h2>
+    <h3 class="underline">Welcome!</h3>
+
+    <p>This is a simple HTML page.</p>
+    <p class="green-wave">This is an article section.</p>
+    <p>Hello! My name is Siddhant. I study at Mirai School of Technology.</p>
 </body>
 </html>
