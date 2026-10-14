@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo with 9 Text Positions</title>
-
+    <title>Position</title>
     <style>
         body {
             margin: 0;
-            overflow: hidden;
-            font-family: Arial, sans-serif;
-            background: #111;
-        }
-        .photo-grid {
-            position: relative;
-            width: 100vw;
             height: 100vh;
+            background-image: url("backgrounds.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
         }
-        .background-photo {
+        .divs {
+            font-size: 25px;
+            color: rgb(8, 113, 243);
+        }
+        #name1 {
             position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-            z-index: 1;
+            left: 10px;
+            bottom: 10px;
         }
-
-        .photo-grid::after {
-            content: "";
+        #name2 {
             position: absolute;
-            inset: 0;
-            background: rgb(0 0 0 / 18%);
-            z-index: 2;
+            right: 10px;
+            bottom: 10px;
         }
-        .text {
+        #name3 {
             position: absolute;
-            z-index: 3;
-            max-width: 28%;
-            color: white;
-            font-size: clamp(14px, 2vw, 30px);
-            font-weight: bold;
-            text-align: center;
-            text-shadow: 0 2px 5px black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
-
-        .top-left { top: 3%; left: 3%; }
-        .top-middle { top: 3%; left: 50%; transform: translateX(-50%); }
-        .top-right { top: 3%; right: 3%; }
-
-        .middle-left { top: 50%; left: 3%; transform: translateY(-50%); }
-        .center { top: 50%; left: 50%; transform: translate(-50%, -50%); }
-        .middle-right { top: 50%; right: 3%; transform: translateY(-50%); }
-
-        .bottom-left { bottom: 3%; left: 3%; }
-        .bottom-middle { bottom: 3%; left: 50%; transform: translateX(-50%); }
-        .bottom-right { right: 3%; bottom: 3%; }
+        #name4 {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        #name5 {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+        }
+        #name6 {
+            position: absolute;
+            left: 50%;
+            top: 10px;
+            transform: translateX(-50%);
+        }
+        #name7 {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #name8 {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #name9 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
     </style>
 </head>
-
 <body>
-    <main class="photo-grid">
-        <img class="background-photo" src="background.png" alt="Background Photo">
-
-        <div class="text top-left"> Siddhant</div>
-        <div class="text top-middle">Siddhant</div>
-        <div class="text top-right">Siddhant</div>
-
-        <div class="text middle-left">Siddhant</div>
-        <div class="text center">Siddhant</div>
-        <div class="text middle-right">Siddhant</div>
-
-        <div class="text bottom-left">Siddhant</div>
-        <div class="text bottom-middle">Siddhant</div>
-        <div class="text bottom-right">Siddhant</div>
-    </main>
+    <div class="divs">
+        <div id="name9">Siddhant</div>
+        <div id="name6">Siddhant</div>
+        <div id="name4">Siddhant</div>
+        <div id="name8">Siddhant</div>
+        <div id="name3">Siddhant</div>
+        <div id="name7">Siddhant</div>
+        <div id="name1">Siddhant</div>
+        <div id="name5">Siddhant</div>
+        <div id="name2">Siddhant</div>
+    </div>
 </body>
 </html>
