@@ -1,0 +1,13 @@
+.container div {
+  background-color: #5b5555;
+  text-align: center;  
+  font-size: 30px;
+  margin: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  background-color: rgb(192, 186, 34);
+  font: 24pxpx;
+}
